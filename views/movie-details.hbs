@@ -8,4 +8,11 @@
 <p>Stars: {{stars}}</p>
 <p>{{description}}</p>
 <p>{{showtimes}}</p>
-<a href="/movies">Back</a> 
+
+<button><a href="/movies/{{_id}}/edit">Edit</a></button>
+
+<form action="/movies/{{_id}}/delete" method="POST">
+  <button type="submit">Delete</button>
+</form>
+
+<a href="/movies">Back to all Movies</a> 
